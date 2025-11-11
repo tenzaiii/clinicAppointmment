@@ -108,7 +108,7 @@ body {
   height: 50px;
   border-radius: 6px;
   font-weight: 600;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 /* --- Hero Slider Enhancements --- */
