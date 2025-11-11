@@ -108,7 +108,7 @@ body {
   height: 50px;
   border-radius: 6px;
   font-weight: 600;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 /* --- Hero Slider Enhancements --- */
@@ -185,6 +185,13 @@ body {
   font-weight: 700;
 }
 
+.uk-heading {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--primary-color);
+
+}
+
 /* Stats Section */
 .stats-section {
   background: var(--test-gradient);
@@ -208,6 +215,13 @@ body {
   opacity: 0.9;
 }
 
+.uk-heading-medium {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
 /* Service cards */
 .service-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -220,7 +234,7 @@ body {
 }
 
 .service-icon {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin-bottom: 15px;
 }
 
