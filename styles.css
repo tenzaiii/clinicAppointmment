@@ -20,7 +20,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--white) !important;
   border-radius: 6px;
   font-weight: 600;
@@ -176,7 +176,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto 15px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 28px;
 }
 
@@ -188,7 +188,7 @@ body {
 .uk-heading {
   font-size: 25px;
   font-weight: 800;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 
 }
 
@@ -261,7 +261,7 @@ body {
   left: 0;
   width: 40px;
   height: 3px;
-  background: var(--accent-teal);
+  background: var(--test-gradient);
 }
 
 .footer-links {
@@ -281,6 +281,10 @@ body {
 
 .footer-links a:hover {
   color: var(--white);
+}
+
+.uk-grid-large p {
+  text-align: center;
 }
 
 .social-links {
@@ -315,6 +319,7 @@ body {
   font-size: 0.9rem;
 }
 
+
 /* Swiper */
 
 .swiper {
@@ -333,6 +338,19 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.uk-card .uk-card-body {
+    background: var(--secondary-color);
+}
+
+.uk-card .uk-card-body h3 {
+  color: var(--white);
+  font-size: 30px;
+}
+
+.uk-card .uk-card-body p {
+  color: var(--white);
 }
 
 @media (max-width: 960px) {
@@ -370,7 +388,7 @@ body {
 
 /* Responsive overlay container */
 .hero-overlay {
-  background-color: rgba(196, 221, 243, 0.8);
+  background-color: rgba(0, 194, 113, 0.8);
   border-radius: 8px;
   max-width: 480px;
   padding: 1rem 1.5rem;
@@ -411,7 +429,13 @@ body {
 
 /* Button margin adjustment */
 .hero-overlay a.uk-button {
+  background-color: var(--secondary-color);
+  color: var(--white);
   margin-top: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+
+
 }
 
 /* Responsive positioning tweaks */
@@ -438,7 +462,6 @@ body {
   justify-content: center;
   padding: 20px;
   background: var(--test-gradient);
-
 }
 
 .login-card {
@@ -451,7 +474,7 @@ body {
 }
 
 .login-left {
-  background: var(--secondary-color);
+  background: url(IMG/banner_3.png);
   color: white;
   padding: 60px 40px;
   display: flex;
@@ -533,17 +556,18 @@ body {
 }
 
 .forgot-password {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 500;
 }
 
 .forgot-password:hover {
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
 .btn-login {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: white;
   border: none;
   padding: 14px;
@@ -630,7 +654,7 @@ body {
 }
 
 .signup-link a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 500;
 }
@@ -701,3 +725,214 @@ body {
     gap: 15px;
   }
 }
+
+/* ---------------------------------------------------- */
+/* ---------------------SIGN-UP PAGE--------------------- */
+/* ---------------------------------------------------- */
+.signup-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+    background: var(--test-gradient);
+}
+
+.signup-card {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  margin: 20px 0;
+}
+
+.signup-left {
+  background: url(IMG/banner_3.png);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-right {
+  padding: 60px 50px;
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signup-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(30, 135, 240, 0.1);
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+
+.name-row {
+  display: flex;
+  gap: 20px;
+}
+
+.name-col {
+  flex: 1;
+}
+
+.terms-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 25px 0;
+}
+
+.terms-container input {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.terms-container a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}
+
+.btn-signup {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.btn-signup:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 135, 240, 0.3);
+}
+
+.login-link {
+  text-align: center;
+  color: #777;
+  margin-top: 25px;
+}
+
+.login-link a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+}
+
+.features-list li {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  background: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.feature-content h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.feature-content p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.welcome-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .signup-left {
+    display: none;
+  }
+
+  .signup-right {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
