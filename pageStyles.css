@@ -23,7 +23,7 @@ body {
   background: var(--secondary-color);
   color: var(--white) !important;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 600;/*   */
   padding: 8px 20px;
   transition: all 0.3s;
 }
@@ -61,33 +61,27 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('IMG/clinic1.png');
-  background-size: cover;
+  background: linear-gradient(rgba(0, 128, 255, 0.7), rgba(0, 255, 115, 0.7)),
+    url('IMG/clinic1.png');  background-size: cover;
   background-position: center;
   color: white;
-  padding: 100px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
-.hero-section h1 {
-  color: var(--secondary-color);
-  font-size: 3.5rem;
+.hero-section h2 {
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
+  color: var(--white);
 }
 
 .hero-section p {
-  font-size: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto 30px;
-}
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+    color: var(--white);
 
-.uk-button {
-  background-color: var(--secondary-color);
-  border-radius: 6px;
-  font-weight: 600;
-  padding: 12px 30px;
-  transition: all 0.3s;
 }
 
 .section-title {
@@ -271,7 +265,7 @@ body {
 
 .services-hero {
   background: linear-gradient(rgba(0, 128, 255, 0.7), rgba(0, 255, 115, 0.7)),
-    url('IMG/clinic1.png');
+    url('IMG/clinic3.png');
   background-size: cover;
   background-position: center;
   color: white;
