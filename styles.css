@@ -474,7 +474,8 @@ body {
 }
 
 .login-left {
-  background: url(IMG/banner_3.png);
+  background: url(IMG/clinic3.png);
+  background-size: cover;
   color: white;
   padding: 60px 40px;
   display: flex;
@@ -749,7 +750,8 @@ body {
 }
 
 .signup-left {
-  background: url(IMG/banner_3.png);
+  background: url(IMG/clinic1.png);
+  background-size: cover;
   color: white;
   padding: 60px 40px;
   display: flex;
