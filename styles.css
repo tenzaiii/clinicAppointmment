@@ -283,10 +283,6 @@ body {
   color: var(--white);
 }
 
-.uk-grid-large p {
-  text-align: center;
-}
-
 .social-links {
   display: flex;
   gap: 15px;
