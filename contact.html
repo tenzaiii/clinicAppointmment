@@ -13,141 +13,57 @@
     <!-- UIkit -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
     <!-- local css -->
-    <link rel="stylesheet" href="styles.css" link="styles">
+    <link rel="stylesheet" href="pageStyles.css" link="styles">
 </head>
 
 <body>
 
-<style>
-.gradient-overlay {
-    position: relative;
-    width: 100%;
-    height: 150vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(1, 255, 196, 0.818) 100%), url("IMG/hospital_3.png");   
-    background-size: cover;
-    background-position: center;
-}
-
-.gradient-overlay::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.gradient-overlay .content {
-    position: relative;
-    padding: 10px 50px;
-    color: white;
-    width: 60%;
-}
-
-.uk-card1{
-   color: white;
-   margin-left: 230px;
-   margin-top: 100px;
-   border-radius: 20px;
-   box-shadow: 5px 5px 5px rgb(0, 0, 0);
-   width: 1000px;
-   height: 700px;
-}
-
-.gradient-overlay p {
-    font-size: 23px;
-    font-weight: 1000;
-    line-height: 1.7;
-    color: black;
-}
-
-.uk-card-overlay.custom-card { 
-    background-color: rgba(255, 255, 255, 0.695); 
-}
-
-.typing-text{
-    width: 30ch;
-    text-wrap: nowrap;
-    overflow:hidden;
-    animation: typing 2s steps(30) infinite alternate-reverse;
-    font-size: 40px;
-    font-weight: 500;
-    color:#00baa2;
-    margin-left: 30px;
-    margin-bottom: 30px;
-}
-
-@keyframes typing{
-    from {
-        width: 0ch;
-    }
-}
-
-.contact {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-.detail-block {
-    flex: 1;
-    padding: 20px;
-    background-color: #ecf0f1; 
-    border-radius: 8px;
-    border-left: 4px solid #3498db; 
-}
-
-.detail-block h2 {
-    font-size: 1.4em;
-    color: #3498db; 
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.detail-info {
-    line-height: 1.6;
-    margin-bottom: 5px;
-    color: #2c3e50;
-    font-style: normal;
-}
-
-.detail-description {
-    color: #7f8c8d;
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #bdc3c7;
-}
-</style>
 
 
-<!-- NAVBAR -->
+
+<!-- Top Contact Bar -->
+    <div class="contact-info">
+        <div class="uk-container">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                    <span uk-icon="receiver"></span> Hotline: (02) 8988-1000
+                    <span class="uk-margin-left"><span uk-icon="mail"></span> info@easyclinic.com</span>
+                </div>
+                <div class="uk-width-auto">
+                    <a href="#" class="uk-margin-small-right" uk-icon="facebook"></a>
+                    <a href="#" class="uk-margin-small-right" uk-icon="instagram"></a>
+                    <a href="#" class="uk-margin-small-right" uk-icon="twitter"></a>
+                    <a href="#" uk-icon="youtube"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <nav class="uk-navbar-container">
-            <div class="uk-container ">
+        <nav class="uk-navbar-container uk-box-shadow-small">
+            <div class="uk-container">
                 <div uk-navbar>
                     <div class="uk-navbar-left">
-                        <div class="uk-navbar-left">
-                            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="appointment.html">Appointment</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <ul class="uk-navbar-nav">
-                            <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">EasyClinic</a>
+                        <!-- Toggle button visible on small screens only -->
+                        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#"
+                            uk-toggle="target: #mobile-dropdown" aria-label="Toggle menu"></a>
+
+                        <a class="uk-navbar-item brand-logo" href="index.html"
+                            aria-label="Back to Home">Easy<span>Clinic</span></a>
+
+
+                        <!-- Main nav visible on medium+ screens -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="form.html">Appointment</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
                         </ul>
                     </div>
-                    <div class="uk-navbar-right">
-
+                    <div class="uk-navbar-right uk-visible@m">
                         <ul class="uk-navbar-nav">
                             <li><a href="login.html">LOG IN</a></li>
                         </ul>
@@ -155,6 +71,23 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Dropdown menu (hidden by default) for mobile toggle -->
+        <div id="mobile-dropdown" class="uk-navbar-dropdown uk-navbar-dropdown-width-1 uk-hidden@m"
+            uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0;">
+            <div class="uk-navbar-dropdown-grid uk-child-width-1-1 uk-grid-collapse" uk-grid>
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="form.html">Appointment</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 
